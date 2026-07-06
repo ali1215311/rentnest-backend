@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch ./src/server.ts",
-    "build": "prisma generate && tsup ./src/server.ts",
+    "build": "prisma generate && tsdown ./src/server.ts -d ./dist/src",
     "start": "node dist/server.mjs"
   },
   "keywords": [],
@@ -43,7 +43,7 @@
     "@types/node": "^26.1.0",
     "@types/pg": "^8.20.0",
     "prisma": "^7.8.0",
-    "tsup": "^8.5.1",
+    "tsdown": "^0.22.3",
     "tsx": "^4.23.0",
     "typescript": "^6.0.3"
   }
